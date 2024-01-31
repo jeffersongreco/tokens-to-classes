@@ -1,0 +1,25 @@
+{
+  "p": [
+    "padding"
+  ],
+  "ph": [
+    "padding-left",
+    "padding-right"
+  ],
+  "pv": [
+    "padding-top",
+    "padding-bottom"
+  ],
+  "pt": [
+    "padding-top"
+  ],
+  "pr": [
+    "padding-right"
+  ],
+  "pb": [
+    "padding-bottom"
+  ],
+  "pl": [
+    "padding-left"
+  ]
+}

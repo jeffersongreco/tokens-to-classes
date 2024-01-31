@@ -1,0 +1,18 @@
+{
+  "name": "@uai-design/tokens-to-classes",
+  "version": "0.0.1",
+  "description": "",
+  "author": "grco",
+  "license": "MIT",
+  "keywords": [
+    "design-tokens",
+    "style-dictionary"
+  ],
+  "type": "module",
+  "scripts": {
+    "build-variables": "node src/processors/index.js",
+    "build-classes": "",
+    "build": "pnpm build-variables && pnpm build-classes"
+  },
+  "devDependencies": {}
+}

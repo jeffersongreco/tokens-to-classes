@@ -1,0 +1,28 @@
+{
+  "color": {
+    "core": {
+      "light": {
+        "neutral": {
+          "opaque": {
+            "0": "#ffffff",
+            "30": "#fbfbfbff"
+          }
+        }
+      },
+      "dark": {
+        "neutral": {
+          "opaque": {
+            "0": "#ffffff",
+            "30": "#040404FF"
+          }
+        }
+      }
+    },
+    "semantic": {
+      "surface": {
+        "0": "neutral-opaque-0",
+        "1": "neutral-opaque-30"
+      }
+    }
+  }
+}
