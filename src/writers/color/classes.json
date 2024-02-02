@@ -1,0 +1,14 @@
+{
+  "bg": [
+    "background"
+  ],
+  "text": [
+    "color"
+  ],
+  "borderIn": [
+    "border-color"
+  ],
+  "borderOut": [
+    "outline-color"
+  ]
+}

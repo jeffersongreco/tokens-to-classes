@@ -1,49 +1,37 @@
-import camelToKebab from '../../utils/camel-to-kebab.js'
+import getJson from '../../utils/get-json.js';
+import camelToKebab from '../../utils/camel-to-kebab.js';
 
-function dimensionClasses(tokensJson, classesJson) {
-  let classes = [];
+function dimensionToClasses(classesJsonPath, dimensionTokensJsonPath) {
+  const classesJson = getJson(classesJsonPath);
+  const dimensionTokensJson = getJson(dimensionTokensJsonPath);
 
-  function processObject(tokensJson, classesJson, path = "") {
-    for (let classKey in classesJson) {
-      let prefix = `.${classKey}`;
-      let properties = classesJson[classKey];
+  let css = "";
 
-      for (let tokenKey in tokensJson) {
-        let className = `${prefix}${path}-${camelToKebab(tokenKey)}`;
-        let variableName = `--uai-dimension${path}-${camelToKebab(tokenKey)}`;
-        let value = tokensJson[tokenKey];
+  for (const nomeClasse in classesJson) {
+    const propriedades = classesJson[nomeClasse];
 
-        if (typeof value === "object") {
-          processObject(value, properties, `${path}-${camelToKebab(tokenKey)}`);
-        } else {
-          classes.push(`${className} {`);
+    for (const scaleType of Object.keys(dimensionTokensJson.dimension)) {
+      const scale = dimensionTokensJson.dimension[scaleType];
 
-          for (let property in properties) {
-            classes.push(`  ${property}: var(${variableName});`);
-          }
+      for (const key of Object.keys(scale)) {
+        const className = `${nomeClasse}-${camelToKebab(scaleType)}-${camelToKebab(key)}`;
+        const variableName = `--uai-dimension-${camelToKebab(scaleType)}-${camelToKebab(key)}`;
+        const value = scale[key];
 
-          classes.push(`}`);
-        }
+        css += `.${className} {\n`;
+        propriedades.forEach((propriedade) => {
+          css += `  ${propriedade}: var(${variableName});\n`;
+        });
+        css += "}\n";
+        css += "\n";
       }
     }
   }
 
-  processObject(tokensJson.dimension, classesJson);
-
-  return classes.join("\n");
+  return css;
 }
 
-export default dimensionClasses;
-
+const classesCss = dimensionToClasses('./classes.json', '../../../tokens/dimension.tokens.json');
+// console.log(classesCss);
 import fs from 'fs';
-import getJson from '../../utils/get-json.js';
-
-const tokensPath = '../../../tokens/dimension.tokens.json';
-const tokensJson = getJson(tokensPath);
-const classesPath = './classes.json';
-const classesJson = getJson(classesPath);
-
-const result = dimensionClasses(tokensJson, classesJson);
-
-console.log(result);
-// fs.writeFileSync('./tmp.css', result, 'utf-8');
+fs.writeFileSync('./tmp.css', classesCss, 'utf-8');

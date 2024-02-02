@@ -8,8 +8,3 @@ function camelToKebab(value) {
 };
 
 export default camelToKebab;
-
-// Test
-// const camelCaseString = "exemploCamelCase";
-// const kebabCaseResult = camelToKebab(camelCaseString);
-// console.log(kebabCaseResult);
