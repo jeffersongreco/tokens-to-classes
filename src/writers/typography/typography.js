@@ -30,7 +30,7 @@ function typographyToClasses() {
 export default typographyToClasses;
 
 // Teste
-// const css = typographyToClasses('../../../tokens/typography.tokens.json');
+// const css = typographyToClasses();
 // console.log(css);
 // import fs from 'fs';
 // fs.writeFileSync('./tmp.css', css, 'utf-8');
