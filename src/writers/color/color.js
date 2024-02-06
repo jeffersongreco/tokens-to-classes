@@ -1,9 +1,9 @@
 import getJson from '../../utils/get-json.js';
 import camelToKebab from '../../utils/camel-to-kebab.js';
 
-function colorToClasses(classesPath, colorsPath) {
-  const classesJson = getJson(classesPath);
-  const colorTokensJson = getJson(colorsPath);
+function colorToClasses() {
+  const classesJson = getJson('./classes.json');
+  const colorTokensJson = getJson('../../../tokens/color.tokens.json');
 
   let css = "";
 
@@ -30,9 +30,11 @@ function colorToClasses(classesPath, colorsPath) {
   return css;
 }
 
-const classesPath = './classes.json';
-const colorsPath = '../../../tokens/color.tokens.json';
-const classes = colorToClasses(classesPath, colorsPath);
+export default colorToClasses;
+
+// Test
+// const colorsPath = '../../../tokens/color.tokens.json';
+// const classes = colorToClasses(colorsPath);
 // console.log(classes);
-import fs from 'fs';
-fs.writeFileSync('./tmp.css', classes, 'utf-8');
+// import fs from 'fs';
+// fs.writeFileSync('./tmp.css', classes, 'utf-8');

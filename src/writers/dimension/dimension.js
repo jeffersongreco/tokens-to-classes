@@ -1,9 +1,9 @@
 import getJson from '../../utils/get-json.js';
 import camelToKebab from '../../utils/camel-to-kebab.js';
 
-function dimensionToClasses(classesJsonPath, dimensionTokensJsonPath) {
-  const classesJson = getJson(classesJsonPath);
-  const dimensionTokensJson = getJson(dimensionTokensJsonPath);
+function dimensionToClasses() {
+  const classesJson = getJson('./classes.json');
+  const dimensionTokensJson = getJson('../../../tokens/dimension.tokens.json');
 
   let css = "";
 
@@ -31,7 +31,10 @@ function dimensionToClasses(classesJsonPath, dimensionTokensJsonPath) {
   return css;
 }
 
-const classesCss = dimensionToClasses('./classes.json', '../../../tokens/dimension.tokens.json');
+export default dimensionToClasses;
+
+// Test
+// const classesCss = dimensionToClasses('../../../tokens/dimension.tokens.json');
 // console.log(classesCss);
-import fs from 'fs';
-fs.writeFileSync('./tmp.css', classesCss, 'utf-8');
+// import fs from 'fs';
+// fs.writeFileSync('./tmp.css', classesCss, 'utf-8');

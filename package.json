@@ -11,7 +11,7 @@
   "type": "module",
   "scripts": {
     "build-variables": "node src/processors/index.js",
-    "build-classes": "",
+    "build-classes": "node src/writers/index.js",
     "build": "pnpm build-variables && pnpm build-classes"
   },
   "devDependencies": {}

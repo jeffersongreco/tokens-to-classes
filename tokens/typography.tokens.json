@@ -24,14 +24,12 @@
       }
     },
     "semantic": {
-      "title": {
-        "1": {
-          "family": "sans",
-          "size": "minor-scale-16",
-          "weight": "semi-bold",
-          "tracking": "5",
-          "leading": "4"
-        }
+      "title1": {
+        "family": "sans",
+        "size": "16",
+        "weight": "semi-bold",
+        "tracking": "5",
+        "leading": "4"
       }
     }
   }

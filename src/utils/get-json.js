@@ -17,7 +17,7 @@ function getJson(from) {
     return json;
   } catch (error) {
     // Handle error
-    console.error(`Error reading JSON file ${from}: ${error.message}`);
+    console.error(`Error reading JSON file ${from} - ${error.message}`);
 
     return null;
   }

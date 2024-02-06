@@ -1,8 +1,8 @@
 import getJson from '../../utils/get-json.js';
 import camelToKebab from '../../utils/camel-to-kebab.js';
 
-function shadowToClasses(jsonPath) {
-  const json = getJson(jsonPath)
+function shadowToClasses() {
+  const json = getJson('../../../tokens/shadow.tokens.json')
   const shadows = json.shadow;
   let css = "";
 
@@ -24,7 +24,10 @@ function shadowToClasses(jsonPath) {
   return css;
 }
 
-const css = shadowToClasses('../../../tokens/shadow.tokens.json');
+export default shadowToClasses;
+
+// Teste
+// const css = shadowToClasses('../../../tokens/shadow.tokens.json');
 // console.log(css);
-import fs from 'fs';
-fs.writeFileSync('./tmp.css', css, 'utf-8');
+// import fs from 'fs';
+// fs.writeFileSync('./tmp.css', css, 'utf-8');
