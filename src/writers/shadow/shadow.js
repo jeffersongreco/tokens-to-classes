@@ -1,8 +1,8 @@
 import getJson from '../../utils/get-json.js';
 import camelToKebab from '../../utils/camel-to-kebab.js';
 
-function shadowToClasses() {
-  const json = getJson('../../../tokens/shadow.tokens.json')
+function shadowToClasses(tokensPath) {
+  const json = getJson(tokensPath)
   const shadows = json.shadow;
   let css = "";
 

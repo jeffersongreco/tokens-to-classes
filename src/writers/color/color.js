@@ -1,14 +1,14 @@
 import getJson from '../../utils/get-json.js';
 import camelToKebab from '../../utils/camel-to-kebab.js';
 
-function colorToClasses() {
-  const classesJson = getJson('./classes.json');
-  const colorTokensJson = getJson('../../../tokens/color.tokens.json');
+function colorToClasses(configPath, tokensPath) {
+  const configJson = getJson(configPath);
+  const colorTokensJson = getJson(tokensPath);
 
   let css = "";
 
-  for (const nomeClasse in classesJson) {
-    const propriedades = classesJson[nomeClasse];
+  for (const nomeClasse in configJson) {
+    const propriedades = configJson[nomeClasse];
     const prefixoClasse = camelToKebab(nomeClasse);
 
     for (const chaveCor in colorTokensJson.color.semantic) {

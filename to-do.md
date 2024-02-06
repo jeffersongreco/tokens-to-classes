@@ -8,4 +8,5 @@ Alguns lugares estou quebrando em nós o nome dos trem (major.scale.1) e em outr
 
 ## Estilo do código
 
-O lint e o prettier não tão funcionando direito quanto aos ";" por exemplo, fazer funcionar e atualizar os códigos.
+- O lint e o prettier não tão funcionando direito quanto aos ";" por exemplo, fazer funcionar e atualizar os códigos.
+- Tem alguns que tem parâmetros em portugês. Deixar tudo em inglês e melhorar o naming.

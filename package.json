@@ -12,7 +12,8 @@
   "scripts": {
     "build-variables": "node src/processors/index.js",
     "build-classes": "node src/writers/index.js",
-    "build": "pnpm build-variables && pnpm build-classes"
+    "build": "pnpm build-variables && pnpm build-classes",
+    "push": "git add -A && git commit -m 'first commit' && git push"
   },
   "devDependencies": {}
 }

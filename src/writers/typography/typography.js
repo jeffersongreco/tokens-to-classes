@@ -1,8 +1,8 @@
 import getJson from '../../utils/get-json.js';
 import camelToKebab from '../../utils/camel-to-kebab.js';
 
-function typographyToClasses() {
-  const json = getJson('../../../tokens/typography.tokens.json')
+function typographyToClasses(tokensPath) {
+  const json = getJson(tokensPath)
   const types = json.typography.semantic;
   let css = "";
 

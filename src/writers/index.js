@@ -5,20 +5,22 @@ import colorToClasses from './color/color.js'
 import fs from 'fs'
 
 function writeClasses() {
-  const classes = '';
+  let classes = '';
 
-  const color = colorToClasses()
-  const dimension = dimensionToClasses()
-  const shadow = shadowToClasses()
-  const typography = typographyToClasses()
+  const color = colorToClasses('./color/config.json', '../../tokens/color.tokens.json')
+  const dimension = dimensionToClasses('./dimension/config.json', '../../tokens/dimension.tokens.json')
+  const shadow = shadowToClasses('../../tokens/shadow.tokens.json')
+  const typography = typographyToClasses('../../tokens/typography.tokens.json')
 
-  css += `${color}\n`;
-  css += `${dimension}\n`;
-  css += `${shadow}\n`;
-  css += `${typography}\n`;
+  classes += `@import url("./variables.css");\n`
+  classes += `\n`
+  classes += `${color}\n`;
+  classes += `${dimension}\n`;
+  classes += `${shadow}\n`;
+  classes += `${typography}\n`;
 
   return classes
 }
 
 const classes = writeClasses();
-fs.writeFileSync('../dist/classes.css', classes, 'utf-8');
+fs.writeFileSync('../../dist/classes.css', classes, 'utf-8');
