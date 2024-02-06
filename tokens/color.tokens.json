@@ -4,24 +4,132 @@
       "light": {
         "neutral": {
           "opaque": {
-            "0": "#ffffff",
-            "30": "#fbfbfbff"
+            "0": "#ffffffff",
+            "30": "#fbfbfbff",
+            "60": "#f7f7f7ff",
+            "100": "#efefefff",
+            "200": "#ddddddff",
+            "300": "#c9c9c9ff",
+            "400": "#959595ff",
+            "500": "#777777ff",
+            "600": "#606060ff",
+            "700": "#494949ff",
+            "800": "#353535ff",
+            "900": "#212121ff",
+            "1000": "#000000ff"
+          },
+          "transparent": {
+            "0": "#00000000",
+            "30": "#00000004",
+            "60": "#00000007",
+            "100": "#0000000e",
+            "200": "#0000001e",
+            "300": "#00000031",
+            "400": "#00000062",
+            "500": "#0000007f",
+            "600": "#00000097",
+            "700": "#000000b0",
+            "800": "#000000c6",
+            "900": "#000000df",
+            "1000": "#000000ff"
           }
+        },
+        "accent": {
+          "0": "#ffffffff",
+          "200": "#c9e0ffff",
+          "400": "#4c94ffff",
+          "500": "#006ffcff",
+          "700": "#0038c4ff"
+        },
+        "danger": {
+          "0": "#ffffffff",
+          "200": "#ffd3cdff",
+          "400": "#ff5e57ff",
+          "500": "#ef000eff",
+          "700": "#990000ff"
         }
       },
       "dark": {
         "neutral": {
           "opaque": {
-            "0": "#ffffff",
-            "30": "#040404FF"
+            "0": "#020202ff",
+            "30": "#040404ff",
+            "60": "#0c0c0cff",
+            "100": "#161616ff",
+            "200": "#242424ff",
+            "300": "#333333ff",
+            "400": "#595959ff",
+            "500": "#747474ff",
+            "600": "#8c8c8cff",
+            "700": "#a8a8a8ff",
+            "800": "#c5c5c5ff",
+            "900": "#e1e1e1ff",
+            "1000": "#ffffffff"
+          },
+          "transparent": {
+            "0": "#ffffff01",
+            "30": "#ffffff03",
+            "60": "#ffffff08",
+            "100": "#ffffff12",
+            "200": "#ffffff24",
+            "300": "#ffffff36",
+            "400": "#ffffff60",
+            "500": "#ffffff7d",
+            "600": "#ffffff95",
+            "700": "#ffffffb0",
+            "800": "#ffffffcb",
+            "900": "#ffffffe4",
+            "1000": "#ffffffff"
           }
+        },
+        "accent": {
+          "0": "#ffffffff",
+          "200": "#002156ff",
+          "400": "#004bd7ff",
+          "500": "#006bf8ff",
+          "700": "#71aaffff"
+        },
+        "danger": {
+          "0": "#ffffffff",
+          "200": "#520004ff",
+          "400": "#b60015ff",
+          "500": "#e9001eff",
+          "700": "#fe8588ff"
         }
       }
     },
     "semantic": {
       "surface": {
+        "minus1": "neutral-transparent-30",
         "0": "neutral-opaque-0",
-        "1": "neutral-opaque-30"
+        "1": "neutral-opaque-30",
+        "2": "neutral-opaque-60"
+      },
+      "stroke": "neutral-transparent-100",
+      "divider": "neutral-transparent-200",
+      "shadow": {
+        "1": "neutral-transparent-100"
+      },
+      "disabledText": "neutral-transparent-400",
+      "subduedHeading": "neutral-transparent-400",
+      "subduedText": "neutral-transparent-500",
+      "text": "neutral-transparent-900",
+      "heading": "neutral-transparent-1000",
+      "accent": {
+        "colorText": "accent-0",
+        "tintSurface": "accent-200",
+        "focusStroke": "accent-400",
+        "colorSurface": "accent-500",
+        "link": "accent-500",
+        "tintText": "accent-700"
+      },
+      "danger": {
+        "colorText": "danger-0",
+        "tintSurface": "danger-200",
+        "focusStroke": "danger-400",
+        "colorSurface": "danger-500",
+        "link": "danger-500",
+        "tintText": "danger-700"
       }
     }
   }

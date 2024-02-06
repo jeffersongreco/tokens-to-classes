@@ -30,6 +30,132 @@
         "weight": "semi-bold",
         "tracking": "5",
         "leading": "4"
+      },
+      "title2": {
+        "family": "sans",
+        "size": "14",
+        "weight": "semi-bold",
+        "tracking": "5",
+        "leading": "4"
+      },
+      "title3": {
+        "family": "sans",
+        "size": "12",
+        "weight": "semi-bold",
+        "tracking": "5",
+        "leading": "4"
+      },
+      "heading1": {
+        "family": "sans",
+        "size": "8",
+        "weight": "medium",
+        "tracking": "3",
+        "leading": "2"
+      },
+      "heading2": {
+        "family": "sans",
+        "size": "7",
+        "weight": "medium",
+        "tracking": "3",
+        "leading": "2"
+      },
+      "heading3": {
+        "family": "sans",
+        "size": "6",
+        "weight": "medium",
+        "tracking": "3",
+        "leading": "2"
+      },
+      "heading4": {
+        "family": "sans",
+        "size": "5",
+        "weight": "medium",
+        "tracking": "3",
+        "leading": "2"
+      },
+      "dialog1": {
+        "family": "sans",
+        "size": "10",
+        "weight": "medium",
+        "tracking": "4",
+        "leading": "3"
+      },
+      "dialog2": {
+        "family": "sans",
+        "size": "9",
+        "weight": "medium",
+        "tracking": "4",
+        "leading": "3"
+      },
+      "dialog3": {
+        "family": "sans",
+        "size": "8",
+        "weight": "medium",
+        "tracking": "4",
+        "leading": "3"
+      },
+      "dialog4": {
+        "family": "sans",
+        "size": "7",
+        "weight": "medium",
+        "tracking": "4",
+        "leading": "3"
+      },
+      "body1": {
+        "family": "sans",
+        "size": "8",
+        "weight": "normal",
+        "tracking": "1",
+        "leading": "1"
+      },
+      "body2": {
+        "family": "sans",
+        "size": "7",
+        "weight": "normal",
+        "tracking": "1",
+        "leading": "1"
+      },
+      "body3": {
+        "family": "sans",
+        "size": "6",
+        "weight": "normal",
+        "tracking": "1",
+        "leading": "1"
+      },
+      "body4": {
+        "family": "sans",
+        "size": "5",
+        "weight": "normal",
+        "tracking": "1",
+        "leading": "1"
+      },
+      "caption1": {
+        "family": "sans",
+        "size": "7",
+        "weight": "normal",
+        "tracking": "2",
+        "leading": "4"
+      },
+      "caption2": {
+        "family": "sans",
+        "size": "6",
+        "weight": "normal",
+        "tracking": "2",
+        "leading": "4"
+      },
+      "caption3": {
+        "family": "sans",
+        "size": "5",
+        "weight": "normal",
+        "tracking": "2",
+        "leading": "4"
+      },
+      "caption4": {
+        "family": "sans",
+        "size": "4",
+        "weight": "normal",
+        "tracking": "2",
+        "leading": "4"
       }
     }
   }
