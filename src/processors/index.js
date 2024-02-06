@@ -53,4 +53,4 @@ const css = tokensToCSS();
  * @param {string} data - The CSS data to be written to the file.
  * @param {string} encoding - The encoding for the file (default is 'utf-8').
  */
-fs.writeFileSync('../../dist/variables.css', css, 'utf-8');
+fs.writeFileSync('../../dist/css/variables.css', css, 'utf-8');

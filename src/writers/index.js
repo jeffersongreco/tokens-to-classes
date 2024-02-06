@@ -23,4 +23,4 @@ function writeClasses() {
 }
 
 const classes = writeClasses();
-fs.writeFileSync('../../dist/classes.css', classes, 'utf-8');
+fs.writeFileSync('../../dist/css/classes.css', classes, 'utf-8');
